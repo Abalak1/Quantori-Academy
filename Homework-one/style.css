@@ -1,0 +1,163 @@
+
+
+body {
+    background-image: url("/Quantori-Academy/Homework-one/images/wooden-background.jpeg");
+    background-size: cover;
+}
+
+
+.phone-frame{
+    background-color: white;
+    width: 267px;
+    height: 545px;
+    border-radius: 33px;
+    border-style: solid;
+    border-color: #fadec0;
+    border-width: 3px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+
+.screen {
+
+    width: 246px;
+    height: 430px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid black;
+}
+
+.home-button {
+  height: 35px;
+  width: 35px;
+  background-color: white;
+  border-style: solid;
+  border-color: rgb(61, 52, 2);
+  border-width: 2px;
+  border-radius: 50%;
+  display: inline-block;
+  position: absolute;
+  bottom:11px ;
+  left: 115px;
+  cursor: pointer;
+}
+
+#sensor{
+    height: 7px;
+    width: 7px;
+    background-color:  #23170D;
+    border-style: solid;
+    border-radius: 50%;
+    position: absolute;
+    top:12px ;
+    left: 130px;
+    border-width: 0px;
+}
+
+#speaker{
+    height: 4px;
+    width: 38px;
+    background-color: #23170D;
+    border-style: solid;
+    border-radius: 33px;
+    position: absolute;
+    top:29px ;
+    left: 115px;
+    border-width: 0px;
+}
+
+#camera{
+    height: 8px;
+    width: 8px;
+    background-color:  #23170D;
+    border-style: solid;
+    border-radius: 50%;
+    border-width: 0px;
+    position: absolute;
+    top:27px ;
+    left: 92px;
+    border-width: 0px;
+}
+
+
+#camera-icon {
+    width: 25px;
+    height: 23px;
+    position: absolute;
+   bottom: 2px;
+   right: 5px;
+   cursor: pointer;
+
+}
+
+.volume-buttons{
+    width: 2px;
+    height: 200px;
+    position: absolute;
+    left: -4px;
+    top: 62px;
+    
+
+}
+
+#mute-button {
+    width: 2px;
+    height: 19px;
+    background-color: rgb(252, 242, 219);
+    border-radius: 33px;
+    border-style: solid;
+    border: 0px;
+    cursor: pointer;
+}
+    
+    
+
+#volume-up {
+    width: 2px;
+    height: 33px;
+    background-color:rgb(252, 242, 219);
+    margin-top: 22px;
+    border-radius: 33px;
+    border-style: solid;
+    border: 0px;
+    cursor: pointer;
+}
+
+#volume-down {
+    width: 2px;
+    height: 33px;
+    background-color: rgb(252, 242, 219);
+    margin-top: 11px;
+    border-radius: 33px;
+    border-style: solid;
+    border: 0px;
+    cursor: pointer;
+
+}
+
+#power-button{
+    width: 2px;
+    height: 33px;
+    background-color: rgb(252, 242, 219);
+    border-radius: 33px;
+    border-style: solid;
+    border: 0px;
+    position: absolute;
+    right: -4px;
+    top: 103px;
+    cursor: pointer;
+}
+
+#screen-background{
+
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+}
