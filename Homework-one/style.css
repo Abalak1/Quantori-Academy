@@ -34,8 +34,8 @@ body {
 }
 
 .home-button {
-  height: 35px;
-  width: 35px;
+  height: 33px;
+  width: 33px;
   background-color: white;
   border-style: solid;
   border-color: rgb(61, 52, 2);
@@ -160,12 +160,13 @@ body {
     height: 100%;
     object-fit: cover;
     overflow: hidden;
-    display: show;
+    opacity: 1;
+    transition: opacity 0.5s, visibility 0.5s;
 
 }
 
 
-/* #black-screen {
+#black-screen {
     width: 246px;
     height: 430px;
     position: absolute;
@@ -174,7 +175,8 @@ body {
     margin-right: -50%;
     transform: translate(-50%, -50%);
     background-color: black;
-} */
+    
+}
 
 #screen-content-middle {
     width: 246px;
@@ -228,6 +230,7 @@ body {
     font-size: 14px;
     font-family: Helvetica;
     text-align: center;
+    cursor: grab;
 
   }
 
@@ -237,6 +240,7 @@ body {
     font-weight: 100;
     font-family: Helvetica;
     text-align: center;
+    cursor: default;
   }
 
   #time-text{
@@ -245,6 +249,8 @@ body {
     text-align: center;
     font-family: Helvetica;
     font-weight: 100;
+    cursor: default;
+
   }
 
 
