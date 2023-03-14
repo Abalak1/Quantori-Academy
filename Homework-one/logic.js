@@ -28,15 +28,3 @@ function homeButton() {
 }
 
 
-// const screen = document.getElementById('screen-background');
-// const myButton = document.getElementById('power-button');
-
-// myButton.addEventListener('click', () => {
-//     if (screen.style.opacity === '1') {
-//         screen.style.opacity = '0';
-//         console.log("aaaa")
-//     } else {
-//         screen.style.opacity = '1';
-//         console.log("bbb")
-//     }
-// });
