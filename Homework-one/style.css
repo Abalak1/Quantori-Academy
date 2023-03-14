@@ -160,4 +160,75 @@ body {
     height: 100%;
     object-fit: cover;
     overflow: hidden;
+    display: show;
+
 }
+
+
+/* #black-screen {
+    width: 246px;
+    height: 430px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    background-color: black;
+} */
+
+#screen-content-middle {
+    width: 246px;
+    height: 430px;
+    position: absolute;
+    top: 0px;
+
+}
+
+
+#time {
+    width: 92px;
+    height: 44px;
+    background-color: red;
+    margin: 0 auto;
+    margin-top: 47px;
+
+}
+
+#date{
+    width: 142px;
+    height: 14px;
+    background-color: red;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+#slide-to-unlock{
+    width: 104px;
+    height: 17px;
+    margin: 0 auto;
+    margin-top: 258px;
+}
+
+#swipe-up-indicator{
+    width: 22px;
+    height: 4px;
+    background-color: gray;
+    border-radius: 33px;
+    border: 0px;
+    margin: 0 auto;
+    margin-top: 29px;
+}
+
+
+
+
+#unlock-text {
+    background-image: linear-gradient(60deg, black, rgb(62, 62, 62), white);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    font-size: 15.5px;
+    margin: 0 auto;
+
+  }
+

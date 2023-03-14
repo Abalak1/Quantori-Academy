@@ -1,3 +1,3 @@
-
-const a = document.getElementByClass("screen").style.color = "green"
-a()
+function changeColor(color) {
+    document.body.style.backgroundColor = color;
+}
