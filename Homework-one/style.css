@@ -160,7 +160,6 @@ body {
     height: 100%;
     object-fit: cover;
     overflow: hidden;
-    opacity: 1;
     transition: opacity 0.5s, visibility 0.5s;
 
 }
@@ -286,4 +285,8 @@ body {
     position: absolute;
     right: 2px;
     top: 1px;
+  }
+
+  .hidden {
+    opacity: 0;
   }
