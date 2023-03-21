@@ -44,13 +44,18 @@ img {
   overflow: hidden;
   
 }
-.x {
+
+.logo-one {
   display: block;
   position: absolute;
-
   animation: moveX 12s linear 0s infinite ;
 }
 
+.logo-two {
+  display: block;
+  position: absolute;
+  animation: moveY 12s linear 0s infinite ;
+}
 
 
 @keyframes moveX {
@@ -65,6 +70,29 @@ img {
 
 }
 
+@keyframes moveY {
+  0% { transform: translate(0vw, -webkit-calc(0vh ));  filter: var(--orange) } 
+  25%{ transform:  scaleX(-1)translate(-webkit-calc(50vw - 40px), -webkit-calc(60vh - 80px));  filter: var(--orange) }
+  25.1%{filter: var(--green) }
+  50%{ transform: translate(-webkit-calc(0vw - 60px), -webkit-calc(100vh - 75px));  filter: var(--green) }
+  50.1%{filter: var(--red) }
+  75%{ transform:  scaleX(-1)translate(-webkit-calc(-50vw + 60px), -webkit-calc(40vh - 80px));  filter: var(--red) }
+  75.1%{filter: var(--blue) }
+  100%{transform: translate(0vw, -webkit-calc(0vh ));  filter: var(--blue)  }
+
+}
+
+/* @keyframes moveY {
+  0% { transform: translate(0vw, -webkit-calc(0vh ));  filter: var(--red) } 
+  25%{ transform: translate(-webkit-calc(-50vw + 40px), -webkit-calc(70vh - 80px));  filter: var(--red) }
+  25.1%{filter: var(--green) }
+  50%{ transform: translate(-webkit-calc(10vw - 60px), -webkit-calc(100vh - 75px));  filter: var(--green) }
+  50.1%{filter: var(--orange) }
+  75%{ transform: translate(-webkit-calc(50vw - 60px), -webkit-calc(30vh - 80px));  filter: var(--orange) }
+  75.1%{filter: var(--blue) }
+  100%{transform: translate(0vw, -webkit-calc(0vh ));  filter: var(--blue)  }
+
+} */
 
 
 .hidden{
