@@ -13,6 +13,12 @@
     box-sizing: border-box;
 }
 
+.btn{
+    width: 200px;
+    height: 200px;
+
+}
+
 audio { display:none;}
 
 img {
@@ -61,3 +67,6 @@ img {
 
 
 
+.hidden{
+  display: none;
+}
