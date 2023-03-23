@@ -1,0 +1,39 @@
+
+svg {
+  position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+  }
+
+
+#min-arrow{
+    animation: clock 4s infinite linear;
+    transform-box: fill-box;
+
+  }
+
+#hour-arrow{
+    animation: clock-two 48s infinite linear;
+    transform-box: fill-box;
+
+  }
+
+  @keyframes clock-two {
+    from{
+    transform: rotateZ(0deg);
+    }
+    to {
+    transform: rotatez(360deg);
+    }
+}
+
+
+  @keyframes clock {
+    from{
+    transform: rotateZ(0deg);
+    }
+    to {
+    transform: rotatez(360deg);
+    }
+}
