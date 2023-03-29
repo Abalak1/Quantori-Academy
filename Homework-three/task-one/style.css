@@ -120,6 +120,20 @@ input[type="search"]::-webkit-search-results-decoration {
   margin-right: 5.75px;
 }
 
+@media screen and (min-width: 375px) {
+  .upgrade {
+    max-width: 1144px;
+    width: 90vw;
+  }
+
+  .unlock {
+  }
+  .storage--info {
+  }
+  .upgrade--button {
+  }
+}
+
 /* statistics box  */
 
 .box {
@@ -210,6 +224,25 @@ input[type="search"]::-webkit-search-results-decoration {
   order: 1;
   align-self: stretch;
   flex-grow: 0;
+}
+
+@media screen and (min-width: 1200px) {
+  .data--matric {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 32px;
+  }
+  .box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+    gap: 8px;
+    width: 262px;
+    height: 162px;
+  }
 }
 
 /* performance box */
@@ -326,4 +359,7 @@ h3 {
   gap: 12px;
 
   /* Inside auto layout */
+}
+
+@media screen and (min-width: 1200px) {
 }
