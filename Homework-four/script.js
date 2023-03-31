@@ -57,3 +57,37 @@ const getSmallestValue2 = numbers => {
 
 
 // Exercise 8
+
+
+const getOddValues2 = numbers => {
+    return numbers.reduce((acc, num) => {
+        if (num % 2 !== 0) {
+            acc.push(num);
+        }
+        return acc;
+    }, []);
+};
+
+
+// Exercise 9
+
+
+const calculateTotal = products => {
+    return products.reduce((acc, product) => {
+        return acc + (product.price * product.count);
+    }, 0);
+};
+
+
+// Exercise 10
+
+
+const getUniqueValues = numbers => {
+    return numbers.reduce((acc, number) => {
+        if (acc.indexOf(number) === -1) {
+            acc.push(number);
+        }
+        return acc;
+    }, []);
+};
+
