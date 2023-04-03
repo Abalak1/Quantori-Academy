@@ -91,3 +91,50 @@ const getUniqueValues = numbers => {
     }, []);
 };
 
+
+// Exercise 11
+
+const getErrorMessage = code => {
+    const errorMessages = {
+        500: "Server Error",
+        401: "Authorization failed",
+        402: "Server Error",
+        403: "Access denied",
+        404: "Not found"
+    };
+
+    return errorMessages[code] || "Unknown error";
+};
+
+
+// Exercise 12
+
+const get2SmallestValues = numbers => {
+    const sortedNumbers = numbers.sort((a, b) => a - b);
+    return [sortedNumbers[0], sortedNumbers[1]];
+};
+
+
+// Exercise 13
+
+const getFullName = person => {
+    const { firstName, secondName, patronymic } = person;
+    return `Name: ${firstName} ${patronymic} ${secondName}`;
+};
+
+
+// Exercise 14
+
+const multiplyTo = (numbers, multiplier) => {
+    return numbers.map(num => num * multiplier);
+};
+
+
+// Exercise 15
+
+const getCharacterNames = (characters, franchise) => {
+    const filteredCharacters = characters.filter(char => char.franchise === franchise);
+    const names = filteredCharacters.map(char => char.name);
+    return names.join(', ');
+};
+
