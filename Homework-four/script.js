@@ -138,3 +138,134 @@ const getCharacterNames = (characters, franchise) => {
     return names.join(', ');
 };
 
+
+// Exercise 16
+
+const getSmallestRow = numbers => {
+    const smallestRowValues = [];
+    for (let row of numbers) {
+        let smallestValue = row[0];
+        for (let value of row) {
+            if (value < smallestValue) {
+                smallestValue = value;
+            }
+        }
+        smallestRowValues.push(smallestValue);
+    }
+    return smallestRowValues;
+};
+
+
+// Exercise 17 
+
+const getSmallestColumn = numbers => {
+    const smallestColumnValues = [];
+    for (let i = 0; i < numbers[0].length; i++) {
+        let smallestValue = numbers[0][i];
+        for (let j = 1; j < numbers.length; j++) {
+            if (numbers[j][i] < smallestValue) {
+                smallestValue = numbers[j][i];
+            }
+        }
+        smallestColumnValues.push(smallestValue);
+    }
+    return smallestColumnValues;
+};
+
+
+// Exercise 18
+
+const get2BiggestValues = numbers => {
+    numbers.sort((a, b) => b - a);
+    return [numbers[0], numbers[1]];
+};
+
+// Exercise 19
+
+const getNumberOfVowels = string => {
+    const vowels = ['a', 'e', 'i', 'o', 'u'];
+    let count = 0;
+    for (let i = 0; i < string.length; i++) {
+        if (vowels.includes(string[i].toLowerCase())) {
+            count++;
+        }
+    }
+    return count;
+};
+
+
+// Exercise 20
+
+const getCapitalizedStrings = string => {
+    let evenString = '';
+    let oddString = '';
+    for (let i = 0; i < string.length; i++) {
+        if (i % 2 === 0) {
+            evenString += string[i].toUpperCase();
+            oddString += string[i].toLowerCase();
+        } else {
+            evenString += string[i].toLowerCase();
+            oddString += string[i].toUpperCase();
+        }
+    }
+    return [evenString, oddString];
+};
+
+
+// Exercise 21
+
+const getCorrectString = string => {
+    let output = '';
+    let count = 0;
+    let prevChar = '';
+    for (let i = 0; i < string.length; i++) {
+        let char = string[i];
+        if (char === prevChar) {
+            count++;
+        } else {
+            count = 1;
+        }
+        if (count <= 2) {
+            output += char;
+        }
+        prevChar = char;
+    }
+    return output;
+};
+
+// Exercise 22
+
+const getFlattenedArray = numbers => {
+    let result = [];
+    for (let i = 0; i < numbers.length; i++) {
+        let element = numbers[i];
+        if (Array.isArray(element)) {
+            result = result.concat(getFlattenedArray(element));
+        } else {
+            result.push(element);
+        }
+    }
+    return result;
+};
+
+
+// Exercise 23
+
+const getNotUniqueValues = numbers => {
+    const frequency = {};
+    const notUnique = [];
+
+    for (let i = 0; i < numbers.length; i++) {
+        const num = numbers[i];
+        frequency[num] = (frequency[num] || 0) + 1;
+    }
+
+    for (const num in frequency) {
+        if (frequency[num] > 1) {
+            notUnique.push(parseInt(num));
+        }
+    }
+
+    return notUnique;
+}
+
