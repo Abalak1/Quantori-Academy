@@ -1,0 +1,365 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 16px;
+  gap: 24px;
+  font-family: "Inter";
+}
+
+header {
+  align-self: stretch;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.web--logo {
+  margin-top: 8.5px;
+}
+
+/* search */
+
+.search--container {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.no--submit {
+  border: 1px solid white;
+  width: 100%;
+  background-image: url("/Quantori-Academy/Homework-three/task-one/images/glass.svg");
+  background-repeat: no-repeat;
+  background-position: 14px center;
+}
+
+input[type="search"] {
+  margin-top: 24px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  border: 1px solid #eaecf0;
+  height: 46px;
+  width: 92vw;
+  border-radius: 6px;
+  padding: 0px 0px 0px 44px;
+}
+
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+  -webkit-appearance: none;
+}
+
+/* upgrade box  */
+
+.upgrade {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 343px;
+  height: 196px;
+  background: #282828;
+  border-radius: 16px;
+}
+
+.unlock {
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 38px;
+  text-align: center;
+  color: #ffffff;
+  margin-top: 32px;
+  margin-bottom: 8px;
+}
+
+.storage--info {
+  width: 279px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 2px;
+}
+
+.upgrade--button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 119px;
+  height: 40px;
+  background: #ffffff;
+  border-radius: 39px;
+  border: 0px;
+  flex: none;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 24px;
+  color: #282828;
+}
+
+.lightning {
+  margin-right: 5.75px;
+}
+
+@media screen and (min-width: 375px) {
+  .upgrade {
+    max-width: 1144px;
+    width: 90vw;
+  }
+
+  .unlock {
+  }
+  .storage--info {
+  }
+  .upgrade--button {
+  }
+}
+
+/* statistics box  */
+
+.box {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 12px 16px;
+  gap: 8px;
+  width: 343px;
+  height: 132px;
+  background: #ffffff;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.06);
+  border-radius: 12px;
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+  margin-bottom: 16px;
+}
+
+.box--header {
+  font-weight: 400;
+  margin: 0px;
+  font-size: 16px;
+  line-height: 26px;
+  color: #5f6980;
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+}
+.box--amount {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 40px;
+  color: #282828;
+  flex: none;
+  margin: 0px;
+}
+
+.badge {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 2px 10px;
+  border-radius: 100px;
+}
+
+.badge--positive {
+  background: #dcfff5;
+}
+.badge--negative {
+  background: #ffe0e3;
+}
+
+.box--gain {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 20px;
+}
+
+.gain__positive {
+  color: #20c997;
+}
+.gain__negative {
+  color: #dc3545;
+}
+
+.box--change {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 20px;
+  color: #9d9fa2;
+}
+
+.info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: 8px;
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 0;
+}
+
+@media screen and (min-width: 1200px) {
+  .data--matric {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 32px;
+  }
+  .box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+    gap: 8px;
+    width: 262px;
+    height: 162px;
+  }
+}
+
+/* performance box */
+
+.performance--box {
+  /* Auto layout */
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px 0px 24px;
+  gap: 24px;
+  border-radius: 12px;
+}
+
+.performance--header {
+  display: flex;
+  justify-content: space-between;
+  width: 301px;
+  background: #ffffff;
+  border-bottom: 1px solid #eaecf0;
+  height: 54px;
+}
+
+.performance--header {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 26px;
+  color: #282828;
+}
+
+.performance--stream {
+  /* Auto layout */
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  gap: 32px;
+
+  width: 343px;
+  height: 22px;
+
+  background-color: #282828;
+}
+
+.scrollable--content {
+  overflow-x: scroll;
+  overflow-y: hidden;
+  width: 300px;
+  white-space: nowrap;
+}
+.table--sections {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding-left: 16px;
+  width: 1580px;
+  height: 54px;
+  background: #f9fafb;
+}
+
+h3 {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: #5f6980;
+}
+
+.table--content {
+  background: #ffffff;
+  border-bottom: 1px solid #eaecf0;
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+}
+
+.positive {
+  background: #dcfff5;
+  border-radius: 100px;
+  width: 60px;
+  text-align: center;
+}
+
+.table--content--logo {
+  /* Auto layout */
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: 12px;
+}
+
+.different-location {
+  padding-left: 25px;
+}
+
+.different-location--two {
+  padding-right: 25px;
+}
+
+.table--pages {
+  /* Auto layout */
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-end;
+  padding-top: 16px;
+  gap: 12px;
+
+  /* Inside auto layout */
+}
+
+@media screen and (min-width: 1200px) {
+}
